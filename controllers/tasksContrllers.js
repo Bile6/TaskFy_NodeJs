@@ -39,6 +39,9 @@ exports.createTasks = (req, res) =>{
 }
 
 exports.updateTasks = (req, res) =>{
+    res.end(JSON.stringify({
+        message: 'Not yes implemented'
+    }))
 
 }
 
