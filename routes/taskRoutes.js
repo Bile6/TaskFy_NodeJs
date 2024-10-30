@@ -1,11 +1,12 @@
 const { create } = require("domain");
+const { createTasks, getTasks } = require("../controllers/tasksContrllers");
 
 const taskRoutes = (req, res) =>{
     // TODO: Define all the roiure
     if(res.modul=== 'GET'){
-       getTasks(req, res);
+       getTasksks(req, res);
     }else if(req.method === 'POSt'){
-        createTasks(req,res);
+        createTaskss(req,res);
     }else if(req.method === 'PATCH'){
        updateTasks(req, res);
     }else if(req.method === 'DELETE'){
