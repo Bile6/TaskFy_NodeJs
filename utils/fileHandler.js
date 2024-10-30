@@ -1,7 +1,6 @@
 const  fs= require('fs');
 exports.writeTasksToFile= (data)=>{
-    
-    fs.writeFileSync('/../data/tasks.json',JSON.stringify(data))
+    fs.writeFileSync('/../data/tasks.json',JSON.stringify(data, null, 2))
     return data;
 }
 
